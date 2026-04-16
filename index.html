@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina en equipo XD</title>
+    
+    <style>
+        /* Aquí pegamos el CSS para que la magia ocurra */
+        body { font-family: sans-serif; margin: 0; padding: 20px; }
+        
+        .nosotros-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            display: flex; /* Esto pone el texto y la imagen de lado */
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap; /* Para que en el celular se vea bien */
+        }
+
+        .nosotros-content { flex: 1; min-width: 300px; }
+        .nosotros-image { flex: 1; min-width: 300px; }
+        
+        .nosotros-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .subtitle { color: #007bff; font-weight: bold; font-size: 14px; }
+        .btn-nosotros {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Aqui haremos una pagina</h1>
+
+    <h1 style="text-align: center;">Aquí haremos una página</h1>
+
+    <div class="nosotros-container">
+        
+        <div class="nosotros-content">
+            <span class="subtitle">NUESTRA ESENCIA</span>
+            <h2>Creamos soluciones con propósito</h2>
+            <p>
+                En <strong>[Nombre de tu Marca]</strong>, creemos que la tecnología y la creatividad deben ir de la mano. Nacimos con el objetivo de simplificar procesos y ofrecer resultados reales a quienes buscan destacar en el mundo digital.
+            </p>
+            <p>
+                Nuestro equipo combina años de experiencia con una frescura constante, asegurando que cada proyecto sea único, funcional y, sobre todo, humano.
+            </p>
+            <a href="#contacto" class="btn-nosotros">Conócenos más</a>
+        </div>
+
+        <div class="nosotros-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSigRIk85HsKZiS8hV7Ptj_PCYVdc7OaVYhJg&s" alt="Nuestro Equipo">
+        </div>
+
+    </div>
+
 </body>
 </html>
